@@ -117,7 +117,7 @@
 \end_layout
 
 \begin_layout Section
-שאלה
+חלק
 \family roman
 \series bold
 \shape up
@@ -149,121 +149,425 @@
  
 \end_layout
 
-\begin_layout Standard
-אינטגרציה למשוואת הקרניים 
+\begin_layout Subsection
+
+\numeric on
+1
 \end_layout
 
 \begin_layout Standard
-משוואת הקרניים )נבחר את פרמטר אורך המסילה(
+מקדם השבירה מוגדר על ידי 
 \begin_inset Formula 
 \[
-\frac{d}{ds}\left[n\left(\vec{r}\left(s\right)\right)\frac{d\vec{r}\left(s\right)}{ds}\right]=\vec{\nabla}n\left(\vec{r\left(s\right)}\right)
+n(r)=1+\frac{2Gm}{c^{2}r}=1+\frac{1}{r}
 \]
 
 \end_inset
 
-
-\begin_inset Formula 
-\[
-\frac{d}{ds}\left[n\left(\vec{r}\left(s\right)\right)\dot{\vec{r}}\right]=\vec{\nabla}n\left(\vec{r\left(s\right)}\right)
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\left(1+\frac{1}{r}\right)\frac{d\vec{r}\left(s\right)}{ds}=\int\vec{\nabla}n\left(\vec{r\left(s\right)}\right)\Rightarrow
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\]
-
+כאשר הגדרנו 
+\begin_inset Formula $\frac{2Gm}{c^{2}}=1$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-נציב את מקדם השבירה 
-\begin_inset Formula $n(r)=1+\frac{2Gm}{c^{2}r}=1+\frac{1}{r}$
+נמצא את המשוואות הדרושות לאינטרגציה נומרית על משוואת הקרניים
+\end_layout
+
+\begin_layout Standard
+נבחר להשתמש בפרמטר אורך המסילה.
+ ונקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משוואות על 
+\begin_inset Formula $r,\dot{r},ds$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $r$
+\end_inset
+
+ הוא המסלול, 
+\begin_inset Formula $\dot{\vec{r}}=\frac{d\vec{r}}{ds}$
+\end_inset
+
+ ו 
+\begin_inset Formula $s$
+\end_inset
+
+ היא מסילה כך ש 
+\begin_inset Formula $ds$
+\end_inset
+
+ הוא פרמטר אורך המסילה.
+ המשוואות המתקבלות 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{d}{ds}\left[n\left(\vec{r}\left(s\right)\right)\dot{\vec{r}}\right]=\vec{\nabla}n\left(\vec{r}\left(s\right)\right)
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\dot{\vec{r}}=\frac{d\vec{r}}{ds}
+\end{equation}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-נשתמש בקורדינטות קרטזיות לחישובים נומרים ולכן 
+\begin_inset Formula 
+\begin{equation}
+\left|\dot{\vec{r}}\right|=\left|\frac{d\vec{r}}{ds}\right|=1
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נכתוב את המשוואות בצורה דיסקרטית - לנוחות נכתוב כעת את 
+\begin_inset Formula $n\left(\vec{r}\left(s\right)\right)$
+\end_inset
+
+ כ 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ממשוואה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקבל
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
-n(r)=1+\frac{2Gm}{c^{2}r}=1+\frac{1}{x^{2}+z^{2}}
+\frac{\left[n\dot{\vec{r}}\right]_{i+1}-\left[n\dot{\vec{r}}\right]_{i}}{s_{i}}=\vec{\nabla}n{}_{i}\Rightarrow\frac{n_{i+1}\dot{\vec{r}}_{i+1}-n_{i}\dot{\vec{r}}_{i}}{s_{i}}=\vec{\nabla}n{}_{i}\Rightarrow\dot{\vec{r}}_{i+1}=\frac{\vec{\nabla}n{}_{i}s_{i}+n_{i}\dot{\vec{r}}_{i}}{n_{i+1}}
+\]
+
+\end_inset
+
+ובנוסף מתקיים ש 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{\nabla}n{}_{i}=\vec{\nabla}\left(1+\frac{1}{\sqrt{x^{2}+z^{2}}}\right)=\left[\begin{matrix}\frac{-2x}{\left(x^{2}+z^{2}\right)^{3/2}}\\
+\frac{-2z}{\left(x^{2}+z^{2}\right)^{3/2}}
+\end{matrix}\right]=\frac{-2}{\left|r\right|^{3/2}}\vec{r}
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+ממשוואה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ 
 \begin_inset Formula 
 \[
-\frac{d}{ds}\left[n\left(\vec{r}\left(s\right)\right)\frac{d\vec{r}\left(s\right)}{ds}\right]=\vec{\nabla}n\left(\vec{r\left(s\right)}\right)
+\dot{\vec{r}}_{i}=\frac{\vec{r}_{i+1}-\vec{r}_{i}}{s_{i}}\Rightarrow\vec{r}_{i+1}=\vec{r}_{i}+\dot{\vec{r}}_{i}s_{i}
 \]
 
 \end_inset
 
-עבור פרמטר אורך המסליה מתקיים ש 
-\begin_inset Formula $\vec{r}=\left[\begin{matrix}x\\
+
+\end_layout
+
+\begin_layout Standard
+וממשוואה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+ 
+\begin_inset Formula 
+\[
+\left|\frac{\vec{r}_{i+1}-\vec{r}_{i}}{s_{i}}\right|=1\Rightarrow s_{i}=\left|\vec{r}_{i+1}-\vec{r}_{i}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+חישוב הסטייה מהפתרון האנליטי
+\end_layout
+
+\begin_layout Standard
+הסתייה לפי הפתרון האנליטי )תרגול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\numeric off
+( היא 
+\begin_inset Formula 
+\[
+\alpha=\frac{4Gm}{c^{2}b}=\frac{2}{b}
+\]
+
+\end_inset
+
+נבחר 
+\begin_inset Formula $b=500$
+\end_inset
+
+ ונבדוק את הסתייה עבור המערכת הנתונה:
+\end_layout
+
+\begin_layout Standard
+מקור האור הנקודתי נמצא בנקודה 
+\begin_inset Formula $\left(500,1000\right)$
+\end_inset
+
+ונבדוק את הסתייה 
+\end_layout
+
+\begin_layout Section
+חישובי עזר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{matrix}x\\
 y
-\end{matrix}\right]\Rightarrow\frac{dr}{dx}=\frac{d}{dx}\left[\begin{matrix}x\\
-y
-\end{matrix}\right]=\left|\frac{d}{dx}\left[\begin{matrix}1\\
-y'
-\end{matrix}\right]\right|=dx\sqrt{1+\left(y'\right)^{2}}=1$
+\end{matrix}\right]=r_{0}+\left[\begin{matrix}v_{x}\\
+y_{y}
+\end{matrix}\right]t+tv_{x}+tv_{y}
+\]
+
 \end_inset
 
-
+ 
 \end_layout
 
-\begin_layout Standard
-לאחר הצבה נקבל ש 
-\begin_inset Formula 
-\[
-\frac{d}{ds}\left[1+\frac{1}{\sqrt{z^{2}+x^{2}}}\frac{d\vec{r}\left(s\right)}{ds}\right]=\vec{\nabla}n\left(\vec{r\left(s\right)}\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-נשתמש בפיתוח מהתרגול 
-\begin_inset Formula 
-\[
-\frac{d}{d\tau}\left[n(\vec{r}(\tau))\frac{\dot{\vec{r}}(\tau)}{\|\dot{\vec{r}}(\tau)\|}\right]=\left.\|\dot{\vec{r}}(\tau)\|\vec{\nabla}n(\vec{r})\right|_{\vec{r}=\vec{r}(\tau)}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\frac{d}{d\tau}\left[n(\vec{r}(\tau))\dot{\vec{r}}(\tau)\right]=\frac{dn}{ds}\nabla
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\frac{dn}{ds}\dot{\vec{r}}+n\ddot{\vec{r}}=(\nabla n\cdot\dot{\vec{r}})\dot{\vec{r}}+n\ddot{\vec{r}}=\nabla n
-\]
-
-\end_inset
-
-
+\begin_layout Section
+רמז לתרגיך
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+12
+\numeric off
+ 
 \end_layout
 
 \begin_layout Standard
