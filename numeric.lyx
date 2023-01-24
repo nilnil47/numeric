@@ -453,7 +453,7 @@ n(r)=1+\frac{2Gm}{c^{2}r}=1+\frac{1}{r}
  
 \begin_inset Formula 
 \[
-\left|\frac{\vec{r}_{i+1}-\vec{r}_{i}}{s_{i}}\right|=1\Rightarrow s_{i}=\left|\vec{r}_{i+1}-\vec{r}_{i}\right|
+\left|\frac{\vec{r}_{i+1}-\vec{r}_{i}}{s_{i}}\right|=1\Rightarrow s_{i}\mathcal{}=\left|\vec{r}_{i+1}-\vec{r}_{i}\right|
 \]
 
 \end_inset
@@ -503,19 +503,27 @@ n(r)=1+\frac{2Gm}{c^{2}r}=1+\frac{1}{r}
 
 \end_inset
 
-נבחר 
-\begin_inset Formula $b=500$
+כאשר 
+\begin_inset Formula $b$
 \end_inset
 
- ונבדוק את הסתייה עבור המערכת הנתונה:
+ הוא פרמטר הפיגעה ונתון על ידי ערך ה 
+\begin_inset Formula $x$
+\end_inset
+
+ שאליו האור היה מגיע אילו היה נע בקו ישר
 \end_layout
 
 \begin_layout Standard
-מקור האור הנקודתי נמצא בנקודה 
-\begin_inset Formula $\left(500,1000\right)$
+משוואת הישר שהקרן מקיימת ללא השפעת המסה היא 
+\begin_inset Formula 
+\[
+z-z_{0}=\frac{v_{z}}{v_{x}}\left(x-x_{0}\right)\Rightarrow0-z_{0}=\frac{v_{z}}{v_{x}}\left(b-0\right)\Rightarrow b=-\frac{v_{x}z_{0}}{v_{z}}
+\]
+
 \end_inset
 
-ונבדוק את הסתייה 
+
 \end_layout
 
 \begin_layout Section
@@ -538,7 +546,7 @@ y_{y}
 \end_layout
 
 \begin_layout Section
-רמז לתרגיך
+רמז לתרגיל
 \family roman
 \series bold
 \shape up
