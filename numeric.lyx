@@ -453,7 +453,7 @@ n(r)=1+\frac{2Gm}{c^{2}r}=1+\frac{1}{r}
  
 \begin_inset Formula 
 \[
-\left|\frac{\vec{r}_{i+1}-\vec{r}_{i}}{s_{i}}\right|=1\Rightarrow s_{i}\mathcal{}=\left|\vec{r}_{i+1}-\vec{r}_{i}\right|
+\left|\frac{\vec{r}_{i+1}-\vec{r}_{i}}{s_{i}}\right|=1\Rightarrow s_{i}=\left|\vec{r}_{i+1}-\vec{r}_{i}\right|
 \]
 
 \end_inset
