@@ -461,6 +461,70 @@ n(r)=1+\frac{2Gm}{c^{2}r}=1+\frac{1}{r}
 
 \end_layout
 
+\begin_layout Standard
+שרטוט של הפתרון עבור זוית התחלתית של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מעלות ביחס לציר 
+\begin_inset Graphics
+	filename part1_a.eps
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 חישוב הסטייה מהפתרון האנליטי
 \end_layout
@@ -524,6 +588,100 @@ z-z_{0}=\frac{v_{z}}{v_{x}}\left(x-x_{0}\right)\Rightarrow0-z_{0}=\frac{v_{z}}{v
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+הגרף על השגיאות:
+\end_layout
+
+\begin_layout Section
+טבעת אינשטיין
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/user/Downloads/1/a.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Paragraph
+נמצא את 
+\begin_inset Formula $L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נסמן את את ראשית הצירים ב 
+\begin_inset Formula $O$
+\end_inset
+
+ ואת הנקודה לפי ההנחה שלנו של זוית קטנות ושהקרן נעה שתנועה הקרן היא משלוש,
+ מתקבל שהמשולש 
+\begin_inset Formula $Oz_{o}D$
+\end_inset
+
+ דומה למושלש 
+\begin_inset Formula $z_{s}z_{o}L$
+\end_inset
+
+ ולכן נוכל למצוא את 
+\begin_inset Formula $L$
+\end_inset
+
+ לפי 
+\begin_inset Formula 
+\[
+\frac{z_{o}}{z_{o}+z_{s}}=\frac{D}{L}\Rightarrow L=\frac{D\left(z_{o}+z_{s}\right)}{z_{o}}
+\]
+
+\end_inset
+
+כשאר 
+\begin_inset Formula $D$
+\end_inset
+
+ הוא הודל שכיננו בסעיף הקודם ב 
+\begin_inset Formula $b$
+\end_inset
+
+ ומחושב על ידי 
+\begin_inset Formula 
+\[
+D=-\frac{v_{x}z_{0}}{v_{z}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת נחשב את 
+\begin_inset Formula $\beta$
+\end_inset
+
+ באמצעות 
+\begin_inset Formula 
+\[
+\beta=\tan^{-1}\left(\frac{L}{z_{o}+z_{s}}\right)=\tan^{-1}\left(\frac{L}{z_{o}+z_{s}}\right)=\tan^{-1}\left(\frac{D\left(z_{o}+z_{s}\right)}{z_{o}\left(z_{o}+z_{s}\right)}\right)=\tan^{-1}\left(\frac{D}{z_{0}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
 \end_layout
 
 \begin_layout Section
