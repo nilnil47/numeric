@@ -371,7 +371,7 @@ n(r)=1+\frac{2Gm}{c^{2}r}=1+\frac{1}{r}
 \[
 \vec{\nabla}n{}_{i}=\vec{\nabla}\left(1+\frac{1}{\sqrt{x^{2}+z^{2}}}\right)=\left[\begin{matrix}\frac{-2x}{\left(x^{2}+z^{2}\right)^{3/2}}\\
 \frac{-2z}{\left(x^{2}+z^{2}\right)^{3/2}}
-\end{matrix}\right]=\frac{-2}{\left|r\right|^{3/2}}\vec{r}
+\end{matrix}\right]=\frac{-\vec{r}}{\left|r\right|^{3/2}}
 \]
 
 \end_inset
@@ -582,7 +582,7 @@ n(r)=1+\frac{2Gm}{c^{2}r}=1+\frac{1}{r}
 משוואת הישר שהקרן מקיימת ללא השפעת המסה היא 
 \begin_inset Formula 
 \[
-z-z_{0}=\frac{v_{z}}{v_{x}}\left(x-x_{0}\right)\Rightarrow0-z_{0}=\frac{v_{z}}{v_{x}}\left(b-0\right)\Rightarrow b=-\frac{v_{x}z_{0}}{v_{z}}
+z-z_{s}=\frac{v_{z}}{v_{x}}\left(x-x_{s}\right)\Rightarrow0-z_{S}=\frac{v_{z}}{v_{x}}\left(b-0\right)\Rightarrow b=-\frac{v_{x}z_{0}}{v_{z}}
 \]
 
 \end_inset
@@ -592,6 +592,19 @@ z-z_{0}=\frac{v_{z}}{v_{x}}\left(x-x_{0}\right)\Rightarrow0-z_{0}=\frac{v_{z}}{v
 
 \begin_layout Standard
 הגרף על השגיאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename part1_b.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שגרף זה מאוד שונה ממה שהיינו מצפים לקבל אבל זה מה שיצא
 \end_layout
 
 \begin_layout Section
@@ -681,152 +694,73 @@ D=-\frac{v_{x}z_{0}}{v_{z}}
 \end_layout
 
 \begin_layout Subsection
-ב
-\end_layout
-
-\begin_layout Section
-חישובי עזר
+ג
 \end_layout
 
 \begin_layout Standard
+השרטוט במישור 
+\begin_inset Formula $xz$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename part2.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+השרטוט במישור 
+\begin_inset Formula $xy$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename part2xy.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הרדיוס המתקבל הוא 
+\begin_inset Formula $14.22$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי הקירוב משסעיף א הרדיוס יהיה 
 \begin_inset Formula 
 \[
-\left[\begin{matrix}x\\
-y
-\end{matrix}\right]=r_{0}+\left[\begin{matrix}v_{x}\\
-y_{y}
-\end{matrix}\right]t+tv_{x}+tv_{y}
+L=\frac{D\left(z_{o}+z_{s}\right)}{z_{o}}=3D
 \]
 
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Section
-רמז לתרגיל
-\family roman
-\series bold
-\shape up
-\size larger
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-12
-\numeric off
- 
-\end_layout
-
-\begin_layout Standard
-רמז לשאלה
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-4
-\numeric off
- 
-\end_layout
-
-\begin_layout Standard
-להסתכל על הזמנים
-\end_layout
-
-\begin_layout Standard
-אפשר גם לראות בסיכומים של ירון,
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $t_{1}=\frac{L}{c}$
+כאשר 
+\begin_inset Formula $D$
 \end_inset
 
+ תלוי הוא נקודות החיתוך של הקרן עם ציר ה 
+\begin_inset Formula $x$
+\end_inset
 
-\end_layout
-
-\begin_layout Standard
-שאלה
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-3
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\numeric off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- - לא להתייחס לתיקונים יחסותיים
+ ותלוי בקרן
 \end_layout
 
 \end_body
